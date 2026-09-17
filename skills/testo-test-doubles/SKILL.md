@@ -14,7 +14,7 @@ each with its own reference next to this file:
 | **Mockery** (`testo/bridge-mockery`) | `references/mockery.md` | The project already uses Mockery, or must stay on PHP 8.2. |
 | **Hand-written** fake/stub/spy class | `references/handwritten.md` | The collaborator is a port you own, the double is reused across tests, it holds state, or no library is installed. Always available. |
 
-Fetch `https://php-testo.github.io/llms.txt` before writing tests. Run every command from the project root.
+Run every command from the project root.
 
 ## Vocabulary
 
