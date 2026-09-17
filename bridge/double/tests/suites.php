@@ -7,6 +7,11 @@ use Testo\Application\Config\Plugin\SuitePlugins;
 use Testo\Application\Config\SuiteConfig;
 use Testo\Bridge\Double\DoublePlugin;
 
+# Double's own sources need PHP 8.2+. Below that floor the bridge sits out.
+if (PHP_VERSION_ID < 80200) {
+    return [];
+}
+
 return [
     new SuiteConfig(
         name: 'Bridge/Double/Acceptance',
